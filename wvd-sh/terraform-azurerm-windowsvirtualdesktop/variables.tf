@@ -95,12 +95,12 @@ variable "RDBrokerURL" {
 
 variable "tenant_app_id" {
   description = "ID of the tenant app"
-  default     = "23dcffd9-2ae4-4b8f-8689-2149b3c7f345"
+  default     = ""
 }
 
 variable "tenant_app_password" {
   description = "Password of the tenant app"
-  default     = "3eIbC6bFnazFG5LyvAiAXxIXx779HU25H856ybkIEDU="
+  default     = ""
 }
 
 variable "is_service_principal" {
@@ -155,12 +155,12 @@ variable "as_platform_fault_domain_count" {
 
 variable "log_analytics_workspace_id" {
   description = "Workspace ID of the Log Analytics Workspace to associate the VMs with"
-  default     = "e70d1c19-b459-4b6e-a74e-488861a5ef6f"
+  default     = ""
 }
 
 variable "log_analytics_workspace_primary_shared_key" {
   description = "Primary Shared Key of the Log Analytics Workspace to associate the VMs with"
-  default     = "4AR6J3wnrvATbOX6G8GSG7pDQKGuTI21TZbSyG87BVDXxq894ivDs3YYMEoVZbFgBYe4HovPxOaS44VWbv5O5w=="
+  default     = ""
 }
 
 variable "extension_bginfo" {
