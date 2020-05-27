@@ -10,7 +10,7 @@ variable "host_pool_name" {
 
 variable "vm_prefix" {
   description = "Prefix of the name of the WVD machine(s)"
-  default = "tfvm"
+  default = "tfvmnewiris"
 }
 
 variable "tenant_name" {
@@ -42,6 +42,8 @@ variable "domain_user_upn" {
   description = "**OPTIONAL**: UPN of the user to authenticate with the domain"
   default     = "demodomainjoin"
 }
+
+
 
 variable "domain_password" {
   description = "**OPTIONAL**: Password of the user to authenticate with the domain"
@@ -95,7 +97,7 @@ variable "RDBrokerURL" {
 
 variable "tenant_app_id" {
   description = "ID of the tenant app"
-  default     = ""
+  default     = "23dcffd9-2ae4-4b8f-8689-2149b3c7f345"
 }
 
 variable "tenant_app_password" {
@@ -155,12 +157,12 @@ variable "as_platform_fault_domain_count" {
 
 variable "log_analytics_workspace_id" {
   description = "Workspace ID of the Log Analytics Workspace to associate the VMs with"
-  default     = ""
+  default     = "e70d1c19-b459-4b6e-a74e-488861a5ef6f"
 }
 
 variable "log_analytics_workspace_primary_shared_key" {
   description = "Primary Shared Key of the Log Analytics Workspace to associate the VMs with"
-  default     = ""
+  default     = "4AR6J3wnrvATbOX6G8GSG7pDQKGuTI21TZbSyG87BVDXxq894ivDs3YYMEoVZbFgBYe4HovPxOaS44VWbv5O5w=="
 }
 
 variable "extension_bginfo" {
@@ -202,3 +204,4 @@ variable "managed_disk_type" {
   description = "**OPTIONAL**: If a manged disks are attached this allows for choosing the type. The dafault value is Standard_LRS"
   default     = "Standard_LRS"
 }
+
