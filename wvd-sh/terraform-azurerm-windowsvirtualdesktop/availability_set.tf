@@ -6,7 +6,7 @@ resource "azurerm_availability_set" "main" {
   platform_update_domain_count = "${var.as_platform_update_domain_count}"
   platform_fault_domain_count  = "${var.as_platform_fault_domain_count}"
 
-  tags {
+  tags = {
     BUC             = "${var.tagBUC}"
     SupportGroup    = "${var.tagSupportGroup}"
     AppGroupEmail   = "${var.tagAppGroupEmail}"
